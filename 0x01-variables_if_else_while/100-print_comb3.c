@@ -6,21 +6,25 @@
 
 int main(void)
 {
-int i;
-int j;
-for (i = 48; i < 58; i++)
+int n1 = 48;
+int n2;
+int com = 44;
+while (n1 <= 57)
 {
-for (j = 48; j < 58; j++)
-{if (i != j && i < j)								{putchar(i);
-putchar(j);																																if (j == 57 && i == 56)						:wq
-																															 										 break
-																																																			;
-																																																}
-																																					putchar(',');
-																																									putchar(' ');
-																																												}
-																		}
-										}
-					putchar('\n');
-						return (0);
+n2 = n1 + 1;
+while (n2 <= 57)
+{
+	putchar(n1);
+putchar(n2);
+if (n1 != 56 || n2 != 57)
+{
+putchar(com);
+putchar(32);
+}
+n2 += 1;
+}
+n1 += 1;
+}
+putchar('\n');
+return (0);
 }
